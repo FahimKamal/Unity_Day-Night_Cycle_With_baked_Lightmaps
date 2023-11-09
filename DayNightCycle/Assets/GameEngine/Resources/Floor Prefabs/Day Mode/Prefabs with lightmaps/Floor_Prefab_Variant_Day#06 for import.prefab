@@ -152,6 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3934281054057217244}
   - component: {fileID: 2053040816332849173}
+  - component: {fileID: 3833043430983169799}
   m_Layer: 6
   m_Name: Floor_Prefab_Variant_Day#06 for import
   m_TagString: Floor
@@ -168,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 2044521363271285463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -120, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -197,6 +198,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 100, y: 30, z: 100}
   m_Center: {x: 0, y: 10, z: 0}
+--- !u!114 &3833043430983169799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044521363271285463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a76377e33cecc884b9eea99d19363e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RendererInfo:
+  - renderer: {fileID: 7231760174951234324}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
+  - renderer: {fileID: 2954166495770473852}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 1.0017985, y: 1.0017985, z: -0.0011986089, w: -0.0011986089}
+  m_Lightmaps:
+  - {fileID: 2800000, guid: 3d717e0695b4e614dad919a209ef7ba3, type: 3}
+  - {fileID: 2800000, guid: ea018b2c337d38b4889e334093f3bc17, type: 3}
+  m_LightmapsDir:
+  - {fileID: 2800000, guid: c9b72f54dd9e3fb41b8c3fd33fdf6195, type: 3}
+  - {fileID: 2800000, guid: 74e26da56b1d69b40ba9f6418fcc4065, type: 3}
+  m_ShadowMasks:
+  - {fileID: 0}
+  - {fileID: 0}
+  m_LightInfo: []
 --- !u!1 &3869342901144724779
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +244,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1928207096189460808
 Transform:
