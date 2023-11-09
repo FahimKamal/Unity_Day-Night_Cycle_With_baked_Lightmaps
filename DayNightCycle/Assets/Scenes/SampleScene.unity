@@ -1412,8 +1412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21deb1341a12f244a50b1cee285efb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstMat: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
-  secondMat: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
+  dayMaterial: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
+  nightMaterial: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
   targetRenderer: {fileID: 1656850205}
 --- !u!1 &1734158701
 GameObject:
@@ -1856,6 +1856,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7231760174951234324, guid: d480343781f766647bf30b20781f1974,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1883,8 +1888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21deb1341a12f244a50b1cee285efb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstMat: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
-  secondMat: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
+  dayMaterial: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
+  nightMaterial: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
   targetRenderer: {fileID: 7862187004129008135}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

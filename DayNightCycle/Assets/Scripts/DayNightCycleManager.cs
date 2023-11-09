@@ -14,6 +14,11 @@ public class DayNightCycleManager : MonoBehaviour{
     [SerializeField] private Button dayBtn;
     [SerializeField] private Button nightBtn;
     
+    public enum State{
+        Day,
+        Night
+    }
+    
     private bool _switchDay;
     private bool _switchNight;
     public bool IsSwitching{ get; private set; }
@@ -22,12 +27,10 @@ public class DayNightCycleManager : MonoBehaviour{
     public event EventHandler<DayNightTriggerData> OnTriggerMaterialCycle; 
     
     public class DayNightTriggerData: EventArgs{
+        public State State;
         public bool ChangeTrigger;
         public float ChangeDuration;
-        public DayNightTriggerData(bool changeTrigger, float changeDuration){
-            ChangeTrigger = changeTrigger;
-            ChangeDuration = changeDuration;
-        }
+        
     }
 
     private void Awake(){
@@ -49,7 +52,11 @@ public class DayNightCycleManager : MonoBehaviour{
         if (_switchDay){
             IsSwitching = true;
             var lerp = _timer / changeDuration;
-            OnTriggerMaterialCycle?.Invoke(this, new DayNightTriggerData(true, changeDuration));
+            OnTriggerMaterialCycle?.Invoke(this, new DayNightTriggerData{
+                State = State.Day,
+                ChangeTrigger = true,
+                ChangeDuration = changeDuration
+            });
             dayPostProcessVolume.weight = Mathf.Lerp(0, 1, lerp);
             nightPostProcessVolume.weight = Mathf.Lerp(1, 0, lerp);
             _timer += Time.deltaTime;
@@ -63,7 +70,11 @@ public class DayNightCycleManager : MonoBehaviour{
         if (_switchNight){
             IsSwitching = true;
             var lerp =  _timer / changeDuration;
-            OnTriggerMaterialCycle?.Invoke(this, new DayNightTriggerData(true, changeDuration));
+            OnTriggerMaterialCycle?.Invoke(this, new DayNightTriggerData{
+                State = State.Night,
+                ChangeTrigger = true,
+                ChangeDuration = changeDuration
+            });
             dayPostProcessVolume.weight = Mathf.Lerp(1, 0, lerp);
             nightPostProcessVolume.weight = Mathf.Lerp(0, 1, lerp);
             _timer += Time.deltaTime;
