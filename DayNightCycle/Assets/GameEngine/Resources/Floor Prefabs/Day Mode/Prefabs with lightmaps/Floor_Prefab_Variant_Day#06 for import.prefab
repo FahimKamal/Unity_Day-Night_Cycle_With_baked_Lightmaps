@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2408268807273454928}
   - component: {fileID: 5272555947171580405}
   - component: {fileID: 7231760174951234324}
+  - component: {fileID: 4517157498941225997}
+  - component: {fileID: 7573954210730917557}
   m_Layer: 6
   m_Name: Water
   m_TagString: Untagged
@@ -86,6 +88,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4517157498941225997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119989857123486156}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21deb1341a12f244a50b1cee285efb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayMaterial: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
+  nightMaterial: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
+  targetRenderer: {fileID: 7231760174951234324}
+--- !u!114 &7573954210730917557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119989857123486156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa566f3740562a43b31da076eeda08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayMat: {fileID: 2100000, guid: 2b64fd9e7206d2a418acc6cbf84a144f, type: 2}
+  nightMat: {fileID: 2100000, guid: 61ded2e27b906fb4584eb224275cdbe6, type: 2}
+  targetRenderer: {fileID: 7231760174951234324}
 --- !u!1 &1176939469418305841
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,11 +250,11 @@ MonoBehaviour:
     lightmapIndex: 1
     lightmapOffsetScale: {x: 1.0017985, y: 1.0017985, z: -0.0011986089, w: -0.0011986089}
   m_Lightmaps:
-  - {fileID: 2800000, guid: 3d717e0695b4e614dad919a209ef7ba3, type: 3}
-  - {fileID: 2800000, guid: ea018b2c337d38b4889e334093f3bc17, type: 3}
+  - {fileID: 2800000, guid: 23e822d04b49cdf4d9697c958c40b910, type: 3}
+  - {fileID: 2800000, guid: aada8f621bff27d4aa00992e96764c8e, type: 3}
   m_LightmapsDir:
-  - {fileID: 2800000, guid: c9b72f54dd9e3fb41b8c3fd33fdf6195, type: 3}
-  - {fileID: 2800000, guid: 74e26da56b1d69b40ba9f6418fcc4065, type: 3}
+  - {fileID: 2800000, guid: 7887d0c33f78dd24182bb5f99e531a81, type: 3}
+  - {fileID: 2800000, guid: 0808be45689c02b459d428a777d911e4, type: 3}
   m_ShadowMasks:
   - {fileID: 0}
   - {fileID: 0}
