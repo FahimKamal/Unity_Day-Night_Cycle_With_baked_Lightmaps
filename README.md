@@ -8,4 +8,5 @@ on each prefab.
 - You will need to bake light map for day and night with different light sources for day and night. The system 
 will cycle between them.
 - You can cycle material of different objects too. To make the switch more genuine. 
- 
+
+https://github.com/FahimKamal/Unity_Day-Night_Cycle_With_baked_Lightmaps/assets/47342396/23114e14-c8f2-406c-9b2b-29766ee2e65c
